@@ -45,25 +45,28 @@ main {
 }
 /* flex-grow , flex-shrink flex-basis */
 .content {
+  border: 2px solid blue;
   flex: 2;
   padding: 20px;
 }
 
 .post {
+  /* border: 2px solid red; */
   /* background-color: rgb(157, 128, 128); */
   /* height: 450px; */
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  /* justify-content: center;
-  align-items: center; */
-  /* align-content: center; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 article {
   width: 250px;
   /* height: 150px; */
   padding: 10px;
+  /* border: 2px solid blue; */
   background-color: #ddd;
   flex-grow: 1;
 }

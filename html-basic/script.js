@@ -6,10 +6,17 @@
 // }
 
 $(document).ready(function() {
-  $("#image").click(function() {
-    $("#text").text("Hello jQuery");
+  $("#image").click(function () {
+    $("#text").text("Hey Jude, dont make it bad")
   });
 });
+
+
+// $(document).ready(function() {
+//   $("#image").click(function() {
+//     $("#text").text("Hello jQuery");
+//   });
+// });
 
 // const user = {
 //   firstName: "David",

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6rem; /*1.6rem (it includes extra space above and below the fonts) = 1.6 x font-size */ 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border: 2px solid red;
+    justify-content: center;
+}
+
+nav ul li {
+    border: 1px solid red;
+    margin: 0 15px;/*Actually, this can also be put in "anchor"link. But, it is better to put the margin here.Because, if this "margin" is put in "anchor" link instead, the margins of each nav tabs will still touch each other.*/
+}
+
+
+nav ul li a {
+    border: 1px solid red;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    gap: 10px;
+    display: flex;
+    border: 2px solid red;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.content {
+    padding: 10px;
+    border: 2px solid red;
+    flex: 2;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid blue;
+    gap:10px;
+}
+
+article {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid red;
+    background-color: #ddd;
+    flex-grow: 1;
+}
+
+.sidebar {
+    padding: 10px;
+    border: 2px solid red;
+    flex: 1;
+    background-color: #ddd;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px){
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+}
